@@ -15,7 +15,7 @@ class Home extends React.Component{
   }
   componentDidMount(){
     // let blogtURL = "http://localhost:8888/wp-json/wp/v2/blogs"
-    let blogtURL = "https://limitless-woodland-47510.herokuapp.com/wp-json/wp/v2/blogs"
+    let blogtURL = "https://agile-brushlands-42193.herokuapp.com/wp-json/wp/v2/blogs"
     fetch(blogtURL)
     .then(response => response.json())
     .then(response => {this.setState({blogs: response})})
