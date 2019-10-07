@@ -2,10 +2,12 @@ import React from 'react';
 import Background from '../image/bgImg.JPG';
 import Logo from '../image/bunnyLogo.png';
 import './About.css';
+import Header from "../Header";
 
 function About (){
  return(
    <div>
+   <Header />
     <img src={Background} width="100%" alt="background" />
     <img src={Logo} class="logoImage phone" alt="logo" />
     <br/>

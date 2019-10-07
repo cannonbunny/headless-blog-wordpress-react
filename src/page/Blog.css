@@ -1,0 +1,33 @@
+.blogShowImage{
+  margin-top:8%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50px 30px 0 30px;
+}
+.logoImage{
+  width: 100px;
+  display: block;
+  position: absolute;
+  top: 1%;
+  left: 46%;
+  z-index: 2;
+}
+.contentContainer{
+  margin-top:10%;
+  text-align: left;
+}
+@media only screen and (max-width: 1080px) {
+  .phone {
+    width: 50px;
+    top: 2%;
+    left: 36%;
+  }
+  .blogShowImage{
+    margin-top:5%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 36px 20px 0 20px;
+  }
+}
