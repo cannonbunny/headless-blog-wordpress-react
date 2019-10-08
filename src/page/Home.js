@@ -44,18 +44,12 @@ class Home extends React.Component{
       <div>
 
         <div class="titleDiv">
-        <Row>
-        <Col lg md sm xs>
-          <p class="titleText right">
+
+          <p class="titleText">
             46
-          </p>
-        </Col>
-        <Col lg md sm xs>
-          <p class="titleText left">
             below
           </p>
-        </Col>
-        </Row>
+
         </div>
         <img src={Logo} class="logoHomeImage phoneHome" alt="logo" />
 
@@ -89,7 +83,7 @@ class Home extends React.Component{
             My picture gallery featuring some of the most exciting moments in my life. Documenting my travels through photography became my interest. When I seems to forget, photograph remembers.
             </p>
             <p class="borderParagraph textBlog sideGearsHover">
-            Feature reviews of my gear. Mostly cameras but maybe sometimes I will throw in random stuff like camera phones or tripods.
+            The reviews of my gears. Mostly cameras but maybe sometimes I will throw in random stuff like camera phones or tripods.
             </p>
             <p class="borderParagraph textBlog sideAboutHover">
             A little bit about me. I don't really use facebook, instagram, linkedin, snapchat...etc.
@@ -101,17 +95,27 @@ class Home extends React.Component{
           </Col>
         </Row>
         </div>
+        <div class="blogDiv">
         <h3>
         Latest from the Travel Blogs
         </h3>
         <a href="/blog">
           {blogs}
         </a>
-        <hr/>
+        </div>
+        <div class="photoDiv">
+        <div class="photoInnerDiv">
+        <a class="photoParallaxLink" href="/photo">Photo Gallery</a>
+        </div>
+        </div>
+
         <div class="gearDiv">
         <h3>
         My Travel Gear Reviews
         </h3>
+        <p>
+          Under Construction
+        </p>
         </div>
       </div>
     );

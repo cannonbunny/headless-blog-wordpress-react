@@ -23,7 +23,8 @@ class Blog extends React.Component{
   }
   render(){
     let blogs = this.state.blogs.map((blog, index) => {
-      let String = blog.content.rendered.replace(/(<([^>]+)>)/ig,"");
+      let String = blog.content.rendered
+      // .replace(/(<([^>]+)>)/ig,"");
       return (
         <div key = {index}>
         <Container>
@@ -31,11 +32,9 @@ class Blog extends React.Component{
             <Col lg md sm xs>
               <img class="blogShowImage" src={blog.better_featured_image.source_url} alt={blog.better_featured_image.alt_text}
               />
-            </Col>
-            <Col lg md sm xs>
-              <h4 class="contentContainer">{blog.title.rendered} </h4>
+              <h3 class="contentContainer">{blog.title.rendered} </h3>
               <p style={{textAlign: "left"}}>{blog.acf.date}</p>
-              <p style={{textAlign: "left"}}>{String}</p>
+              <p style={{textAlign: "left"}} dangerouslySetInnerHTML={{ __html:String}}/>
             </Col>
           </Row>
         </Container>
