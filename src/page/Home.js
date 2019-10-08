@@ -28,7 +28,7 @@ class Home extends React.Component{
   render(){
     let blogs = this.state.blogs.map((blog, index) => {
       return (
-        <Col lg={4} md={4} sm={6} xs={6} key={index}>
+        <Col lg={4} md={4} sm={6} xs={12} key={index}>
           <img class="blogImage" src={blog.better_featured_image.source_url} alt={blog.better_featured_image.alt_text}/>
           <h5 class="titleContainer">{blog.title.rendered}</h5>
         </Col>

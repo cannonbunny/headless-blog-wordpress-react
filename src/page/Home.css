@@ -77,7 +77,7 @@
 .titleBackgroundImage{
   background-image: url('../image/titleBgImg.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:cover;
   padding-bottom:60px;
   background-color: black;
 }
@@ -192,14 +192,15 @@ p{
     font-size: 1.5rem;
   }
   .blogImage{
-    width: 150px;
-    height: 150px;
+    width: 240px;
+    height: 180px;
     border-radius: 24px 12px 0 12px;
   }
   .titleContainer{
     position: relative;
     bottom: 0;
-    width: 92%;
+    width: 86%;
+    margin-left: 8%;
   }
   .linkBlogs:hover ~ .sideBlogsHover{
     display: none;
