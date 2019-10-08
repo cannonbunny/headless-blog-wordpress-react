@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../image/bunnyLogo.png';
-import Background3 from '../image/titleBackgroundImage.jpg';
+
 import Background4 from '../image/photoBackgroundImage.JPG';
 import Sidebar1 from '../image/sidebar1.png';
 import Sidebar2 from '../image/sidebar2.png';
