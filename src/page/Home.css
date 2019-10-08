@@ -192,12 +192,14 @@ p{
     font-size: 1.5rem;
   }
   .blogImage{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 24px 12px 0 12px;
   }
   .titleContainer{
     position: relative;
+    bottom: 0;
+    width: 92%;
   }
   .linkBlogs:hover ~ .sideBlogsHover{
     display: none;
