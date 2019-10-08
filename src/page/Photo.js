@@ -11,7 +11,7 @@ import Photo7 from '../image/photo7.JPG';
 import Photo8 from '../image/photo8.jpg';
 import Photo9 from '../image/photo9.jpg';
 import Photo10 from '../image/photo10.jpg';
-import Photo11 from '../image/photo11.JPG';
+// import Photo11 from '../image/photo11.JPG';
 import Photo12 from '../image/photo12.JPG';
 import Photo13 from '../image/photo13.jpg';
 import Photo14 from '../image/photo14.jpg';

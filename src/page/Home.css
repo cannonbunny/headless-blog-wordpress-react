@@ -79,6 +79,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom:60px;
+  background-color: black;
 }
 .link{
   color: #E1FDFC;
@@ -180,5 +181,46 @@ p{
       width:240px;
       height: 320px;
       padding: 15px;
+  }
+}
+@media only screen and (orientation: portrait) {
+  .titleText{
+    font-size: 2.4rem;
+    letter-spacing: 20px;
+  }
+  .link{
+    font-size: 1.5rem;
+  }
+  .blogImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 24px 12px 0 12px;
+  }
+  .titleContainer{
+    position: relative;
+  }
+  .linkBlogs:hover ~ .sideBlogsHover{
+    display: none;
+  }
+  .linkPictures:hover ~ .sidePicturesHover{
+    display: none;
+  }
+  .linkGears:hover ~ .sideGearsHover{
+    display: none;
+  }
+  .linkAbout:hover ~ .sideAboutHover{
+    display: none;
+  }
+  .linkBlogs:hover ~ .sideBlogs{
+    display: inline-block;
+  }
+  .linkPictures:hover ~ .sidePictures{
+    display: inline-block;
+  }
+  .linkGears:hover ~ .sideGears{
+    display: inline-block;
+  }
+  .linkAbout:hover ~ .sideAbout{
+    display: inline-block;
   }
 }
