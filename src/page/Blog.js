@@ -35,7 +35,9 @@ class Blog extends React.Component{
               <h3 class="contentContainer">{blog.title.rendered} </h3>
               <p style={{textAlign: "left"}}>{blog.acf.date}</p>
               <p style={{textAlign: "left"}} dangerouslySetInnerHTML={{ __html:String}}/>
+              <hr/>
             </Col>
+
           </Row>
         </Container>
         </div>

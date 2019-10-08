@@ -10,6 +10,14 @@
   font-family: 'Ubuntu Mono', monospace;
   margin-top:60px;
 }
+.blogImage{
+  margin:8% 0 0 0;
+  padding:0;
+  width: 300px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50px 30px 0 30px;
+}
 .logoHomeImage{
   width: 100px;
   display: block;
@@ -18,24 +26,23 @@
   left: 46%;
   z-index: 2;
 }
-.contentContainer{
-  margin-top:10%;
-  text-align: left;
-}
 .titleContainer{
+  margin-left: 2%;
   position: absolute;
   bottom: 20px;
-  width: 90%;
+  width: 86%;
   background-color: black;
   opacity: 0.7;
   color: white;
-  padding: 5px;
+  padding: 3px;
 }
 .height80{
   height: 60px;
 }
 .blogDiv{
   margin: 5% 0;
+  padding:0;
+  width: 100%;
 }
 .gearDiv{
   margin: 5% 0;
@@ -161,8 +168,9 @@ p{
     left: 43%;
   }
   .blogImage{
-    margin-top:5%;
-    width: 200px;
+    margin:5% 0 0 0;
+    padding: 0;
+    width: 240px;
     height: 200px;
     object-fit: cover;
     border-radius: 36px 20px 0 20px;

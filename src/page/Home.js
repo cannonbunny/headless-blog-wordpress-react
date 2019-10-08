@@ -21,7 +21,6 @@ class Home extends React.Component{
   }
   componentDidMount(){
     let blogtURL = "https://sagacious-chance.000webhostapp.com/wp-json/wp/v2/blogs"
-    // let blogtURL = "https://agile-brushlands-42193.herokuapp.com/wp-json/wp/v2/blogs"
     fetch(blogtURL)
     .then(response => response.json())
     .then(response => {this.setState({blogs: response})})
@@ -29,13 +28,10 @@ class Home extends React.Component{
   render(){
     let blogs = this.state.blogs.map((blog, index) => {
       return (
-        <div key = {index} position="relative" margin="0" padding="0">
-          <Col lg={4} md={4} sm={6} xs={6}>
-            <img class="blogImage" src={blog.better_featured_image.source_url} alt={blog.better_featured_image.alt_text}
-            />
-            <h5 class="titleContainer">{blog.title.rendered} </h5>
-          </Col>
-        </div>
+        <Col lg={4} md={4} sm={6} xs={6} key={index}>
+          <img class="blogImage" src={blog.better_featured_image.source_url} alt={blog.better_featured_image.alt_text}/>
+          <h5 class="titleContainer">{blog.title.rendered}</h5>
+        </Col>
       )
     })
 
@@ -100,7 +96,9 @@ class Home extends React.Component{
         Latest from the Travel Blogs
         </h3>
         <a href="/blog">
-          {blogs}
+        <Row>
+        {blogs}
+        </Row>
         </a>
         </div>
         <div class="photoDiv">
