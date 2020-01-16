@@ -1,13 +1,10 @@
+// header class with bootstrap navbar
+
 import React from "react"
 import './Header.css';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-// <NavDropdown.Item href="/">2019</NavDropdown.Item>
-// <NavDropdown.Divider />
-// <Navbar.Text>
-//   <a href="/about">About</a>
-// </Navbar.Text>
 class Header extends React.Component{
   render(){
   return(

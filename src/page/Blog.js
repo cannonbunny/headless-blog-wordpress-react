@@ -1,3 +1,5 @@
+// blog post display
+
 import React from 'react';
 import Background2 from '../image/titleImg.jpg';
 import Logo from '../image/bunnyLogo.png';
@@ -8,21 +10,8 @@ import './Blog.css';
 import Header from "../Header";
 
 class Blog extends React.Component{
-  constructor() {
-    super();
-    this.state = {
-      blogs:[]
-    }
-  }
-  componentDidMount(){
-    let blogtURL = "https://sagacious-chance.000webhostapp.com/wp-json/wp/v2/blogs"
-    // let blogtURL = "https://agile-brushlands-42193.herokuapp.com/wp-json/wp/v2/blogs"
-    fetch(blogtURL)
-    .then(response => response.json())
-    .then(response => {this.setState({blogs: response})})
-  }
   render(){
-    let blogs = this.state.blogs.map((blog, index) => {
+    let allBlogs = this.props.blogs.map((blog, index) => {
       let String = blog.content.rendered
       // .replace(/(<([^>]+)>)/ig,"");
       return (
@@ -37,20 +26,17 @@ class Blog extends React.Component{
               <p style={{textAlign: "left"}} dangerouslySetInnerHTML={{ __html:String}}/>
               <hr/>
             </Col>
-
           </Row>
         </Container>
         </div>
       )
     })
-
-
     return (
       <div>
       <Header />
         <img src={Background2} width="100%" alt="background" />
         <img src={Logo} class="logoImage phone" alt="logo" />
-        {blogs}
+        {allBlogs}
       </div>
     );
   }

@@ -1,3 +1,5 @@
+// footer function
+
 import React from "react"
 import './Footer.css';
 
